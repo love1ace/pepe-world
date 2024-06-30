@@ -8,7 +8,7 @@ _Read this in other languages: [English](README.md), [한국어](README.ko.md)_
 
 ## Projects List
 
-#### [Don't Click](https://github.com/love1ace/pepe-world/projects/dontclick/index.html)
+#### [Don't Click](https://love1ace.github.io/pepe-world/projects/dontclick/index.html)
 Never click the button on the website!!
 
 #### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/index.html)
