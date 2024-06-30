@@ -1,6 +1,9 @@
 # PEPE THE FROG WORLD
 
 ## This is a collection of various projects utilizing Pepe the Frog memes.
+
+_Read this in other languages: [English](README.md), [한국어](README.ko.md)_
+
 <img src="pepe_img/img_5108/pepe5108.png" alt="Example Image" width="300" />
 
 ## Projects Overview
