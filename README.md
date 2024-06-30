@@ -6,7 +6,7 @@ _Read this in other languages: [English](README.md), [한국어](README.ko.md)_
 
 <img src="pepe_img/img_5108/pepe5108.png" alt="Example Image" width="300" />
 
-## Projects Overview
+## Projects List
 
 #### [Don't Click](https://github.com/love1ace/pepe-world/projects/dontclick/index.html)
 Never click the button on the website!!
