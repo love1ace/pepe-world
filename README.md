@@ -5,11 +5,14 @@
 
 ## Projects Overview
 
-#### [Pepe-Random](https://github.com/love1ace/npm-random-pepes)
-An npm package that random outputs Pepe images.
+#### [Don't Click](https://github.com/love1ace/pepe-world/projects/dontclick/index.html)
+Never click the button on the website!!
 
-#### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/pepegpt.html)
+#### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/index.html)
 A fun AI chatbot that interacts with you using Pepe the Frog memes. This project is a parody of CatGPT.
+
+#### [Pepe-Random](https://github.com/love1ace/npm-random-pepes)
+A npm package that random outputs Pepe images.
 
 ## How to Contribute
 

@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    font-size: 3.5rem;
+}
+
+#triggerButton {
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 3.5rem;
+    background-color: brown;
+    color: white;
+}
+
+@keyframes jelly {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.95);
+    }
+}
+
+#triggerButton:hover {
+    animation: jelly 0.5s ease-in-out;
+}
+
+#myImage, #myText {
+    width: 700px;
+    height: auto;
+    transition: opacity 2s;
+    opacity: 0;
+    display: none;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 600px) {
+    #text, #triggerButton {
+        font-size: 2rem;
+    }
+    #myImage, #myText {
+        width: 300px;
+        font-size: 2rem;
+    }
+}
