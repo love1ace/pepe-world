@@ -1,10 +1,11 @@
 # PEPE THE FROG WORLD
 
-**PEPE THE FROG WORLD** is a collection of various projects utilizing Pepe the Frog memes. 
+## This is a collection of various projects utilizing Pepe the Frog memes.
+<img src="pepe_img/img_5108/pepe5108.png" alt="Example Image" width="300" />
 
 ## Projects Overview
 
-### [PepeGPT](https://love1ace.github.io/pepe-world/pepegpt/pepegpt.html)
+### [PepeGPT](https://love1ace.github.io/projects/pepe-world/pepegpt/pepegpt.html)
 A fun AI chatbot that interacts with you using Pepe the Frog memes. This project is a parody of CatGPT.
 
 ## How to Contribute
@@ -17,13 +18,13 @@ A fun AI chatbot that interacts with you using Pepe the Frog memes. This project
    git clone https://github.com/love1ace/pepe-games.git
    ```
 3.	Create a new branch
-```bash
-git checkout -b feature/new-feature
+   ```bash
+ git checkout -b feature/new-feature
 ```
 
 4.	Commit your changes
    ```bash
-    git commit -am 'Add new feature'
+  git commit -am 'Add new feature'
 ```
 
 5.	Push the branch
