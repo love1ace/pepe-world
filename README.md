@@ -8,7 +8,7 @@
 #### [Pepe-Random](https://github.com/love1ace/npm-random-pepes)
 An npm package that random outputs Pepe images.
 
-#### [PepeGPT](https://love1ace.github.io/projects/pepe-world/pepegpt/pepegpt.html)
+#### [PepeGPT](https://love1ace.github.io/projects/pepegpt/pepegpt.html)
 A fun AI chatbot that interacts with you using Pepe the Frog memes. This project is a parody of CatGPT.
 
 ## How to Contribute
