@@ -19,12 +19,15 @@ A npm package that random outputs Pepe images.
 ### Contributions are always welcome! Follow these steps to contribute:
 
 1. Fork this repository.
+
+   
 2. Clone your fork to your local machine.
-   ```bash
-   git clone https://github.com/love1ace/pepe-games.git
-   ```
+```bash
+git clone https://github.com/love1ace/pepe-games.git
+```
+
 3.	Create a new branch
-   ```bash
+```bash
  git checkout -b feature/new-feature
 ```
 
