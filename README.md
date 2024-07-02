@@ -12,7 +12,7 @@ _Read this in other languages: [English](README.md), [한국어](README.ko.md)_
 Never click the button on the website!!
 
 #### [PepeDinoGame](https://love1ace.github.io/pepe-world/projects/pepedinogame/dino.html)
-
+Enjoy a parody of the classic dino game, but with a Pepe twist! Have fun playing!
 
 #### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/index.html)
 A fun AI chatbot that interacts with you using Pepe the Frog memes. This project is a parody of CatGPT.
