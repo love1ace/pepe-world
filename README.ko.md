@@ -11,6 +11,9 @@ _다른 언어: [English](README.md), [한국어](README.ko.md)_
 #### [Don't Click](https://love1ace.github.io/pepe-world/projects/dontclick/index.html)
 절대 이 웹사이트 안에 있는 버튼을 클릭하지 마세요!!
 
+#### [PepeDinoGame](https://love1ace.github.io/pepe-world/projects/pepedinogame/dino.html)
+크롬 공룡 점프 게임을 패러디한 페페 공룡 점프 게임입니다.
+
 #### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/index.html)
 페페 밈을 이용한 AI 챗봇입니다. 이 프로젝트는 CatGPT의 패러디입니다.
 
