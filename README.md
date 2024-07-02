@@ -11,6 +11,9 @@ _Read this in other languages: [English](README.md), [한국어](README.ko.md)_
 #### [Don't Click](https://love1ace.github.io/pepe-world/projects/dontclick/index.html)
 Never click the button on the website!!
 
+#### [PepeDinoGame](https://love1ace.github.io/pepe-world/projects/pepedinogame/dino.html)
+
+
 #### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/index.html)
 A fun AI chatbot that interacts with you using Pepe the Frog memes. This project is a parody of CatGPT.
 
