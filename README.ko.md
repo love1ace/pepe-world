@@ -17,6 +17,9 @@ _다른 언어: [English](README.md), [한국어](README.ko.md)_
 #### [PepeGPT](https://love1ace.github.io/pepe-world/projects/pepegpt/index.html)
 페페 밈을 이용한 AI 챗봇입니다. 이 프로젝트는 CatGPT의 패러디입니다.
 
+#### [PepeCardGame](https://love1ace.github.io/pepe-world/projects/PepeCardGame/MemoryCardGame.html)
+페페 밈을 이용한 카드 기억하기 게임입니다.
+
 #### [Pepe-Random](https://github.com/love1ace/npm-random-pepes)
 랜덤으로 페페 이미지를 출력하는 npm 패키지입니다.
 
