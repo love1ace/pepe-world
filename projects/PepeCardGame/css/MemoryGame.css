@@ -1,0 +1,301 @@
+html {
+  width:100%;
+  height:100%;
+}
+body {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+
+.modal {
+  position: fixed;
+  height: 90%;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  visibility: hidden;
+  opacity:0;
+  -webkit-transition:opacity 0.4s linear;
+  -moz-transition:opacity 0.4s linear;
+  -ms-transition:opacity 0.4s linear;
+  -o-transition:opacity 0.4s linear;
+  transition:opacity 0.4s linear;
+}
+.modal.show {
+  visibility: visible;
+  opacity:1;
+}
+
+.valign-table {
+  display: table;
+  table-layout: fixed;
+}
+.valign-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#memory--app-container {
+  background-color: #0061a8;
+  width:100%;
+  height:90%;
+}
+
+.memory--menu-bar {
+  width:100%;
+  background-color: #222;
+  height:10%;
+  display:table;
+}
+
+.memory--menu-bar .inner {
+  display:table-cell;
+  vertical-align:middle;
+}
+.memory--menu-bar .left {
+  text-align: left;
+  float:left;
+  width:50%;
+}
+.memory--menu-bar .right {
+  text-align: right;
+  float:right;
+  width:50%;
+}
+.memory--app-name {
+  color:#ccc;
+  font-size:26px;
+  margin:0;
+  padding:1px 4px;
+  text-transform: uppercase;
+  font-family: "Courier New";
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 480px) {
+  .memory--app-name {
+    font-size:16px;
+  }
+}
+
+#memory--settings-icon {
+  height: 24px;
+  display: block;
+  padding:4px 8px;
+  float: right;
+}
+
+#memory--end-game-modal .wrapper {
+  background-color: rgba(0, 0, 0, .86);
+  text-align: center;
+  color:#ccc;
+  padding:8px 0;
+}
+#memory--end-game-modal h2,
+#memory--end-game-modal h3 {
+  margin:0;
+  margin-bottom: 4px;
+}
+
+#memory--settings-modal {
+  background-color: rgba(0, 0, 0, .86);
+  z-index: 4;
+}
+#memory--settings-modal form {
+  min-width:240px;
+  width:50%;
+  margin:0 auto;
+  text-align: center;
+  color:#ccc;
+}
+
+.memory--settings-label {
+  margin:8px 0;
+}
+
+#memory--settings-grid,
+#memory--settings-reset {
+  width:100%;
+  margin-bottom:16px;
+  font-size:18px;
+  background:transparent;
+  color:#ccc;
+  height:50px;
+  text-align: center;
+}
+
+#memory--settings-grid option {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+#memory--settings-reset {
+  border-radius:5px;
+  border:2px solid #ccc;
+  cursor: pointer;
+}
+
+#memory--cards {
+  margin:0 auto;
+  padding:0;
+  height:100%;
+  list-style-type: none;
+  list-style-image: none;
+  position:relative;
+}
+/* entire container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  float:left;
+}
+
+/* flip the pane when clicked */
+.flip-container.clicked .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.flip-container.clicked .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/* flip speed goes here */
+.flipper {
+  width:90%;
+  height:90%;
+  margin:0% auto;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  top:5%;
+  bottom:5%;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  width:100%;
+  height:100%;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background-color: #e12d00;
+  border-radius: 5%;
+  background-image: url(../images/card.svg);
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background-color: #fff;
+  border-radius: 5%;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back.card-1 {
+  background-image: url(/pepe_img/img_1000/pepe1.jpg);
+}
+.back.card-2 {
+  background-image: url(/pepe_img/img_1000/pepe10.jpg);
+}
+.back.card-3 {
+  background-image: url(/pepe_img/img_1000/pepe1000.png);
+}
+.back.card-4 {
+  background-image: url(/pepe_img/img_1000/pepe100.jpg);
+}
+.back.card-5 {
+  background-image: url(/pepe_img/img_1000/pepe101.png);
+}
+.back.card-6 {
+  background-image: url(/pepe_img/img_1000/pepe102.jpg);
+}
+.back.card-7 {
+  background-image: url(/pepe_img/img_1000/pepe103.png);
+}
+.back.card-8 {
+  background-image: url(/pepe_img/img_1000/pepe104.jpg);
+}
+.back.card-9 {
+  background-image: url(/pepe_img/img_2000/pepe1002.png);
+}
+.back.card-10 {
+  background-image: url(/pepe_img/img_1000/pepe106.jpg);
+}
+.back.card-11 {
+  background-image: url(/pepe_img/img_1000/pepe107.jpg);
+}
+.back.card-12 {
+  background-image: url(/pepe_img/img_2000/pepe1004.jpg);
+}
+.back.card-13 {
+  background-image: url(/pepe_img/img_1000/pepe109.jpg);
+}
+.back.card-14 {
+  background-image: url(/pepe_img/img_1000/pepe11.jpg);
+}
+.back.card-15 {
+  background-image: url(/pepe_img/img_2000/pepe1001.png);
+}
+
+/** Matching Cards **/
+/**
+ * If you wish to have custom matching images, you can do so
+ * by leveraging the 'matching' class which is added to one
+ * of the matching cards. See the example below.
+ *
+ * .back.card-1 {
+ *   background-image: url(../images/fruits/apple_1.jpg);
+ * }
+ *
+ * .back.matching.card-1 {
+ *   background-image: url(../images/fruits/apple_2.jpg);
+ * }
+ *
+ */
